@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  </body>
+    <h1 style="font-family: Helvetica">LED Toggle</h1>
+    <p style="font-family: Helvetica">
+      Select the LED you would like to toggle
+    </p>
+    <form/
+      style="font-family: Helvetica"
+      action="https://api.particle.io/v1/devices/e00fce684dfca79f2356316b/led?access_token=d97033052cf42d647231172b9da776ff49b579c5"
+      method="POST"
+      onsubmit="setTimeout(function(){window.location.reload();},30);"
+    >
+      <input type="radio" name="command" value="redled" /> Red
+      <br>
+      <input type="radio" name="command" value="blueled" /> Blue
+      <br>
+      <input type="radio" name="command" value="greenled" /> Green
+      <br>
+      <br>
+      <input type="submit" value="Toggle" />
+    </form>
+  </body>
+</html>
